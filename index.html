@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media-Query-Project</title>
+    <script
+      src="https://kit.fontawesome.com/81501ab9a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vh;
+      }
+      .section01 {
+        margin: 5vh 10vw 5vh 10vw;
+        background-color: rgb(25, 25, 105);
+        height: 90vh;
+        width: 80vw;
+        border-radius: 50px;
+      }
+      .navbar01 {
+        padding: 2vh;
+        margin: 0 22vw 0 22vw;
+        display: flex;
+        height: 26vh;
+        width: 36vw;
+        color: white;
+        
+      }
+      .hand_img {
+        height: 2vh;
+        width: 2vw;
+      }
+      .para {
+        height: 26vh;
+        width: 18vw;
+      }
+      .pc-img {
+        height: 26vh;
+        width: 18vw;
+      }
+      .h01{
+        font-size: 40px;
+        margin:  9vh 2vw 9vh 2vw;
+      }
+      .navbar02{
+        height: 40vh;
+        width: 38vw;
+        margin: 0 22vw 0 22vw;
+      }
+      .pn{
+        height: 3vh;
+        width: 38vw;
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+        font-size: 60px;
+      }
+      .img02{
+        height: 18vh;
+        width: 18vw;
+        padding: 10px;
+      }
+      .img-box{
+        display: flex;
+        margin: 5px 25px;
+      }
+      .navbar03{
+        /* text-align: center; */
+        height: 20vh;
+        width: 38vw;
+        margin: 0 22vw 0 22vw;
+      }
+      .contact{
+        height: 6vh;
+        width: 38vw;
+      }
+      .contact-text {
+        height: 6vh;
+        width: 38vw;
+        font-size: 80px;
+        color: white;
+        text-align: center;
+      }
+      .icons-bar{
+        height: 6vh;
+        width: 38vw;
+        color: azure;
+        text-align: center;
+      }
+      i{
+        font-size: 80px;
+      }
+
+      .section02 {
+        margin: 5vh 30vw 5vh 30vw;
+        background-color: rgb(25, 25, 105);
+        height: 180vh;
+        width: 40vw;
+        border-radius: 50px;
+      }
+    
+      .Navbar01 {
+        padding: 2vh;
+        margin: 0 11vw 0 11vw;
+        height: 52vh;
+        width: 18vw;
+        color: white;
+        
+      }
+      .Hand_img {
+        height: 2vh;
+        width: 2vw;
+      }
+      .Para {
+        height: 13vh;
+        width: 18vw;
+      }
+      .Pc-img {
+        height: 26vh;
+        width: 18vw;
+      }
+      .H01{
+        font-size: 40px;
+        margin:  6vh 2vw 6vh 2vw;
+      }
+      .Navbar02{
+        height: 80vh;
+        width: 19vw;
+        margin: 0 11vw 0 11vw;
+      }
+      .Pn{
+        height: 3vh;
+        width: 19vw;
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+        font-size: 60px;
+      }
+      .Img02{
+        height: 18vh;
+        width: 18vw;
+        padding: 10px;
+      }
+      .Img-box{
+        margin: 5px 25px;
+      }
+      .Navbar03{
+        height: 20vh;
+        width: 19vw;
+        margin: 0 11vw 0 11vw;
+      }
+      .Contact{
+        height: 6vh;
+        width: 19vw;
+      }
+      .Contact-text {
+        height: 6vh;
+        width: 19vw;
+        font-size: 80px;
+        color: white;
+        text-align: center;
+      }
+      .Icons-bar{
+        height: 6vh;
+        width: 19vw;
+        color: azure;
+        text-align: center;
+      }
+      i{
+        font-size: 80px;
+      }
+     
+      @media screen and (max-width: 5000px) and (min-width:2800px ) {
+            body {
+                background-color: darkolivegreen;
+            }
+        .section01 {
+          display: block;
+        }
+        .section02 {
+          display: none;
+        }
+        }
+
+        @media screen and (max-width: 2800px) and (min-width:1400px ) {
+            body {
+                background-color: rgb(236, 236, 78);
+            }
+        .section01 {
+          display: none;
+        }
+        .section02 {
+          display: block;
+        }
+        }
+
+        @media screen and (max-width: 1400px) and (min-width:0px ) {
+            body {
+                background-color: orangered;
+            }
+        .section01 {
+          display: none;
+        }
+        .section02 {
+          display: none;
+        }
+        }
+
+    </style>
+  </head>
+  <body>
+    <section class="section01">
+      <nav class="navbar01">
+        <div class="para">
+          <span>
+            <h1 class="h01"> 
+            <img src="waving-hand.png" alt="" class="hand_img" /> Hi Everyone 
+            <br>
+            Rohit Chandravanshi <br>
+            Developer
+           </h1>
+          </span>
+        </div>
+
+        <div class="pc-img">
+          <img src="pc-image.png" alt="pc-image" class="pc-img" />
+        </div>
+      </nav>
+      <nav class="navbar02">
+        <div class="pn">
+          <h1><strong>Projects</strong></h1>
+        </div>
+        <div class="img-box">
+          <img src="image.png" alt="image" class="img02" />
+          <img src="image.png" alt="image" class="img02" />
+        </div>
+        <div class="img-box">
+          <img src="image.png" alt="image" class="img02" />
+          <img src="image.png" alt="image" class="img02" />
+        </div>
+      </nav> -->
+      <nav class="navbar03">
+        <div class="contact">
+          <p class="contact-text"> <strong>Contact Me</strong> </p>
+        </div>
+        <div class="icons-bar">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+        </div>
+      </nav>
+    </section>
+
+      <section class="section02">
+      <nav class="Navbar01">
+        <div class="Para">
+          <span>
+            <h1 class="H01"> 
+            <img src="waving-hand.png" alt="" class="Hand_img" /> Hi Everyone 
+            <br>
+            Rohit Chandravanshi <br>
+            Developer
+           </h1>
+          </span>
+        </div>
+
+        <div class="Pc-img">
+          <img src="pc-image.png" alt="pc-image" class="Pc-img" />
+        </div>
+      </nav>
+      <nav class="Navbar02">
+        <div class="Pn">
+          <h1><strong>Projects</strong></h1>
+        </div>
+        <div class="Img-box">
+          <img src="image.png" alt="image" class="Img02" />
+          <img src="image.png" alt="image" class="Img02" />
+        </div>
+        <div class="Img-box">
+          <img src="image.png" alt="image" class="Img02" />
+          <img src="image.png" alt="image" class="Img02" />
+        </div>
+      </nav> -->
+      <nav class="Navbar03">
+        <div class="Contact">
+          <p class="Contact-text"> <strong>Contact Me</strong> </p>
+        </div>
+        <div class="Icons-bar">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+        </div>
+      </nav>
+    </section>
+  </body>
+</html>
